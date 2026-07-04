@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uptime Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Uptime Monitor</h1>
+      <p class="subtitle">Real-time URL health dashboard</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="add-url">
+      <h2>Add URL to Monitor</h2>
+      <form id="add-url-form">
+        <input type="url" id="url-input" placeholder="https://example.com" required>
+        <input type="text" id="name-input" placeholder="Label (optional)">
+        <button type="submit">Monitor</button>
+      </form>
+      <p id="form-error" class="error hidden"></p>
+    </section>
+
+    <section class="dashboard">
+      <h2>Monitored URLs</h2>
+      <div id="loading" class="loading">Loading...</div>
+      <div id="connection-error" class="error-state hidden">
+        Could not reach the server. Retrying...
+      </div>
+      <div id="empty-state" class="empty-state hidden">
+        No URLs are being monitored. Add one above.
+      </div>
+      <div id="urls-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Checks run every 60 seconds</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
