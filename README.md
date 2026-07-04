@@ -11,6 +11,10 @@ docker compose up
 - **Frontend Dashboard**: http://localhost:8080
 - **Backend API**: http://localhost:5001
 
+## Repository
+
+- GitHub: https://github.com/Mayank21222/Epifi_Assignment
+
 > **macOS note**: This project defaults to `HOST_PORT=5001` because macOS often reserves port 5000 for AirPlay Receiver. If you want to bind the backend to port 5000 instead, run:
 >
 > ```bash
