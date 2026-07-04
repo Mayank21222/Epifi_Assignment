@@ -2,8 +2,8 @@
 
 ## AI Tech Stack
 
-- **Primary Assistant**: opencode v1.17.17 (CLI-based coding agent)
-- **Underlying LLM**: Claude Sonnet 4 (Anthropic)
+- **Primary Assistant**: opencode v1.17.13 (CLI-based coding agent)
+- **Underlying LLM**: Big Pickle (opencode/big-pickle)
 - **Workflow**: Describe requirement → AI generates code → review output → find bugs → ask for fixes → iterate
 
 ## Prompts That Shipped It
